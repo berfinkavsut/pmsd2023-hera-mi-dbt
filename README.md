@@ -20,7 +20,9 @@ and yields better for micro-calcifications. _Average intensity projection_ has l
 low noise level, and smoothing images which is worse for micro-calcifications. _sofftMIP_ proposes an optimized
 performance between MIP and AIP by using a weighted projection function.
 
-![Projections Methods](/figures/projection_methods.png)
+<p align="center">
+    <img src="/figures/projection_methods.png" width="75%">
+</p>
 
 ### Slice/Slab Image Preprocessing 
 
@@ -40,7 +42,9 @@ Codes for preprocessing and drawing boxes were provided by the Mazurowski Lab's 
 
 ## Project Pipeline & Data Organization
 
-![Project Pipeline](/figures/pipeline.png)
+<p align="center">
+    <img src="/figures/pipeline.png" width="100%">
+</p>
 
 - Dataset files from the public dataset are stored inside `/data/dataset`. 
 - DICOM files are downloaded inside `/data/input`. 
@@ -225,21 +229,29 @@ Some CNR and contrast values were negative. These might have resulted from the w
 
 You can see one of the slab images with annotations in the figure below.
 
-![ROI & Background](/figures/roi_background.png)
+<p align="center">
+    <img src="figures/roi_background.png" width="50%">
+</p>
 
 Here, the steps for background segmentation are shown. 
 
-![Background Segmentation](/figures/background_segmentation.png)
+<p align="center">
+    <img src="/figures/background_segmentation.png" width="85%">
+</p>
 
-Boxes were given slice-wise in the public dataset. Firstly, the slabs were defined by the boxes from slices
-as shown in the table below. 
+Boxes were given slice-wise in the public dataset as shown in the table below. Firstly, the slabs were defined by the boxes from slices indices. 
 
-![Slices and Slabs Indices](/figures/slices_slabs_indices.png)
+  | Slice | $x_1$ | $x_2$ | $y_1$ | $y_2$ |
+  |:-------------:|:--------------:|:--------------:|:--------------:|:--------------:|
+  |#21 | 1411 | 1535 | 1080 | 1172 | 
+  |#26 | 1713 | 1834 | 478  | 583  | 
+  |#29 | 1380 | 1724 | 1216 | 1487 |
 
-Volumes with boxes were evaluated with IQA, which are the DBT images 
-with the label of benign and cancer. 
+Volumes with boxes were evaluated with IQA, which are the DBT images with the label of benign and cancer. 
 
-![Slabs with Boxes](/figures/slabs_with_boxes.png)
+<p align="center">
+    <img src="/figures/slabs_with_boxes.png" width="85%">
+</p>
 
 Mean values of CNR and Contrast were computed for each 
 volume, and subsequently, the mean of means was
