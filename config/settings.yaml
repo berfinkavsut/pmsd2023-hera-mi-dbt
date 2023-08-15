@@ -1,0 +1,24 @@
+# Program settings
+
+# Config directory
+config-dir: '$ROOT$/config'
+
+# Data directory
+data-dir: '$ROOT$/data'
+
+# Input directory with DICOM files
+input-data-dir: '$ROOT$/data/input'
+
+# Output directory to save configurations in JSON format and slab images in PNG format
+output-data-dir: '$ROOT$/data/output'
+
+# Bit-depth to save images in PNG format
+bit-depth: 16   # 10 bit
+
+# Image quality assessment metrics
+iqa-metrics: ['cnr', 'contrast'] 
+
+# Classification performance metrics
+performance-metrics: ['sensitivity', 'specificity', 'precision', 'accuracy_score', 'auc', 'youden']
+op-shifts: [-0.2, -0.1, 0.0, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.375, 0.4]
+pos-threshold-num: [1, 2, 3]

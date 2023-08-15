@@ -1,0 +1,18 @@
+# Dataset settings
+
+# Data folder directory to download DICOM files
+data-dir: '$ROOT$/data/input'
+
+# DICOM file number to download from the cloud database
+dicom-file-number: 5
+
+# Base URL to download DICOM files from
+base-url: 'https://services.cancerimagingarchive.net/nbia-api/services/v1'
+
+# CSV filepaths
+# Source: https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=64685580
+dataset-data-dir: '$ROOT$/data/dataset'
+dataset-all-filepath: '$ROOT$/data/dataset/BCS-DBT file-paths.csv'
+dataset-train-filepath: '$ROOT$/data/dataset/BCS-DBT labels-train-v2.csv'
+dataset-boxes-train-filepath: '$ROOT$/data/dataset/BCS-DBT boxes-train-v2.csv'
+dataset-labels-train-filepath: '$ROOT$/data/dataset/BCS-DBT file-paths-train-v2.csv'
