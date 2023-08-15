@@ -9,6 +9,8 @@ This project was conducted in the scope of the practical course [Project Managem
 
 ## Image Processing 
 
+[Fiji](https://imagej.net/software/fiji/) was used to process and analyze the DBT slice images while working on image processing techniques. Additionally, [Weasis](https://weasis.org/en/), which is a software program for medical image visualization and analysis, was used to read the DICOM files.
+
 ### Slab Generation Techniques
 
 Three different slabbing techniques were implemented for the image processing of DBT: maximum intensity projection (MIP), average intensity projection (AIP), and softMIP [2].
